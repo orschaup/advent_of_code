@@ -16,15 +16,16 @@ def solve2():
     pass
 
 
-class Tests(unittest.TestCase):
-    def test_parse(self):
-        self.assertEqual(parse(""), None)
+testData = """
+"""
 
+
+class Tests(unittest.TestCase):
     def test_solve1(self):
-        self.assertEqual(solve1(), None)
+        self.assertEqual(solve1(*parse(testData)), None)
 
     def test_solve2(self):
-        self.assertEqual(solve2(), None)
+        self.assertEqual(solve2(*parse(testData)), None)
 
 
 if __name__ == "__main__":
